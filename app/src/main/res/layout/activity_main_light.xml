@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/screen_background_light"
+    android:foregroundGravity="bottom|clip_horizontal"
+    tools:context="com.dedicatedtechie.imonit.MainActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="@dimen/standardMarginSize"
+        android:clickable="false"
+        android:elevation="1dp"
+        android:max="240"
+        android:min="0"
+        android:progress="75"
+        android:progressBackgroundTint="@android:color/holo_red_dark"
+        android:progressTint="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:targetApi="o" />
+
+    <ImageView
+        android:id="@+id/watchImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/clock"
+        android:elevation="3dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/countUpOrDownSwitch"
+        app:srcCompat="@drawable/clock" />
+
+    <com.dedicatedtechie.imonit.components.watchComponents.Hand
+        android:id="@+id/hand"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/watch_hand"
+        android:elevation="16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@id/watchImageView"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/watchImageView"
+        app:layout_constraintStart_toStartOf="@id/watchImageView"
+        app:layout_constraintTop_toTopOf="@id/watchImageView"
+        app:srcCompat="@drawable/ic_watch_hand" />
+
+
+    <ImageView
+        android:id="@+id/face"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/clock"
+        android:elevation="4dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@id/watchImageView"
+        app:layout_constraintEnd_toEndOf="@id/watchImageView"
+        app:layout_constraintStart_toStartOf="@id/watchImageView"
+        app:layout_constraintTop_toTopOf="@id/watchImageView"
+        app:srcCompat="@drawable/blank_square" />
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/countUpOrDownSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:onClick="countUpDownSwitchClicked"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textOff="@string/count_down"
+        android:textOn="@string/count_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:showText="true" />
+
+
+    <!--IncrementButtons extends RelativeLayout-->
+    <com.dedicatedtechie.imonit.components.controls.IncrementButtonsLayout
+        android:id="@+id/increment_buttons"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_margin="@dimen/standardMarginSize"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/minUpButton"
+            android:layout_width="@dimen/largeButtonSize"
+            android:layout_height="@dimen/largeButtonSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/add"
+            android:contentDescription="@string/minutes_up_button"
+            android:elevation="2dp"
+            android:padding="4dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/minButtonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/minUpButton"
+            android:layout_alignStart="@id/minUpButton"
+            android:layout_alignEnd="@id/minUpButton"
+            android:elevation="2dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/minutes"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/minDownButton"
+            android:layout_width="@dimen/largeButtonSize"
+            android:layout_height="@dimen/largeButtonSize"
+            android:layout_below="@id/minButtonTextView"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/subtract"
+            android:contentDescription="@string/minutes_down_button"
+            android:elevation="2dp"
+            android:padding="4dp"
+            android:scaleType="fitCenter" />
+
+
+        <ImageView
+            android:id="@+id/secUpButton"
+            android:layout_width="@dimen/largeButtonSize"
+            android:layout_height="@dimen/largeButtonSize"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/add"
+            android:contentDescription="@string/seconds_up_button"
+            android:elevation="2dp"
+            android:padding="4dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/secButtonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secUpButton"
+            android:layout_alignStart="@id/secUpButton"
+            android:layout_alignEnd="@id/secUpButton"
+            android:elevation="2dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/seconds"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/secDownButton"
+            android:layout_width="@dimen/largeButtonSize"
+            android:layout_height="@dimen/largeButtonSize"
+            android:layout_below="@id/secButtonTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="false"
+            android:background="@drawable/subtract"
+            android:contentDescription="@string/seconds_down_button"
+            android:elevation="2dp"
+            android:padding="4dp"
+            android:scaleType="fitCenter" />
+
+
+    </com.dedicatedtechie.imonit.components.controls.IncrementButtonsLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/readoutTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:fontFamily="monospace"
+        android:text="@string/_0_00"
+        android:textSize="100sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.dedicatedtechie.imonit.components.controls.TimerSeekBar
+        android:id="@+id/timerSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standardMarginSize"
+        android:clickable="true"
+        android:elevation="0dp"
+        android:focusable="true"
+        android:max="@integer/seekBarChunks"
+        android:min="0"
+        android:progress="0"
+        app:layout_constraintBottom_toTopOf="@+id/startStopButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="1.0"
+        tools:targetApi="o" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:alpha="0"
+        android:background="@android:color/background_light"
+        android:gravity="center_horizontal|center"
+        android:text="@string/you_can_do_it_get_right_back_to_it"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/startStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fabMarginSize"
+        android:backgroundTint="@color/colorAccentLight"
+        android:elevation="5dp"
+        android:onClick="clickStartStop"
+        android:scaleType="center"
+        android:src="@drawable/play_fab"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dismissFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fabMarginSize"
+        android:backgroundTint="@color/colorAccentLight"
+        android:elevation="5dp"
+        android:onClick="dismissAlarm"
+        android:scaleType="center"
+        android:src="@drawable/ic_timer"
+        android:visibility="gone"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

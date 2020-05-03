@@ -1,0 +1,67 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_eye"
+        app:title="@string/visuals_header">
+
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:key="@string/show_green_to_red_progress_bar"
+            app:icon="@drawable/ic_progress_bar"
+            app:title="@string/show_green_to_red_progress_bar" />
+        <CheckBoxPreference
+            app:defaultValue="false"
+            app:key = "darkmode"
+            app:icon="@drawable/ic_dark"
+            app:title="Dark Mode"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_reminder"
+        app:title="Reminders">
+
+            <ListPreference
+                app:defaultValue="3"
+                app:entries="@array/levels"
+                app:entryValues="@array/levels"
+                app:key="@string/level_setting"
+                app:summary="@string/level_setting_summary"
+                app:title="@string/level_button_text"
+                app:icon="@drawable/ic_timer"/>
+
+
+
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:key="@string/vibrate_on_reminder"
+            app:title="@string/vibrate_on_reminder"
+            app:icon="@drawable/ic_vibration"/>
+
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:key="@string/play_sound_on_reminder"
+            app:title="@string/play_sound_on_reminder"
+            app:icon="@drawable/ic_volume"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_checked"
+        app:title="Completion">
+
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:key="@string/vibrate_on_finish"
+            app:title="@string/vibrate_on_finish"
+            android:icon="@drawable/ic_vibration"/>
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:key="@string/play_sound_on_finish"
+            app:title="@string/play_sound_on_finish"
+            app:icon="@drawable/ic_volume"/>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

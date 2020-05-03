@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name ="colorBackGroundLight">#ffffff</color>
+    <color name="colorBackGroundDark">#000000</color>
+    <color name="colorShadowDark">#222222</color>
+    <color name="colorPrimaryLight">#3F51B5</color>
+    <color name="colorPrimaryDark">#808080</color>
+    <color name="colorAccentDark">#303F9F</color>
+    <color name="colorAccentLight">#ff1269</color>
+    <color name="menuIcons">#ffffff</color>
+</resources>

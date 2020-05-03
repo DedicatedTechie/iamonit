@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">I\'m On It! Focus Timer</string>
+    <string name="app_nickname">I\'m On It!</string>
+    <string name="vibrate_on_finish">Vibrate on finish</string>
+    <string name="vibrate_on_reminder">Vibrate on reminder</string>
+    <string name="play_sound_on_finish">Play sound on finish</string>
+    <string name="play_sound_on_reminder">Play sound on reminder</string>
+    <string name="show_green_to_red_progress_bar">Show green-to-red progress bar</string>
+    <string name="_0_00">0:00</string>
+    <string name="you_can_do_it_get_right_back_to_it">You can do it! Get right back to it!</string>
+    <string name="minutes_down_button">Minutes DOWN button</string>
+    <string name="seconds_down_button">Seconds DOWN button</string>
+    <string name="minutes_up_button">Minutes UP button</string>
+    <string name="seconds_up_button">Seconds UP button</string>
+    <string name="clock">clock</string>
+    <string name="watch_hand">watch hand</string>
+    <string name="you_were_focused_" tools:keep="@string/you_were_focused_">You were focused</string>
+    <string name="vibrate_permission_error">ERROR: App does not have permission to vibrate.</string>
+    <string name="no_vibrator_error">ERROR: This device cannot vibrate.</string>
+    <string name="vibrator_null_error">ERROR: unable to attempt vibration.</string>
+    <string name="rate_the_app">Rate the App</string>
+    <string name="minutes">minutes</string>
+    <string name="seconds">seconds</string>
+    <string name="email_support">email support</string>
+    <string-array name="levels">
+        <item> Level 1 — 0:30</item>
+        <item> Level 2 — 1:00</item>
+        <item> Level 3 — 2:00</item>
+        <item> Level 4 — 3:00</item>
+        <item> Level 5 — 4:00</item>
+        <item> Level 6 — 5:00</item>
+        <item> Level 7 — 10:00</item>
+        <item> Level 8 — 15:00</item>
+        <item> Level 9 — 20:00</item>
+        <item> Level 10 — 30:00</item>
+    </string-array>
+    <string name="abbreviation_for_Level">Lv</string>
+    <string name="count_down">Count Down</string>
+    <string name="count_up">Count Up</string>
+    <string name="settings">settings</string>
+    <string name="ImOnIt">I\'m On It:</string>
+    <string name="title_activity_settings2">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="visuals_header">Visuals</string>
+
+    <!-- Messages Preferences -->
+
+    <!-- Sync Preferences -->
+    <string name="level_button_text">Change Frequency</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="instructions_text">Set the timer to go off when you need to finish your project. The timer can be set using the PLUS and MINUS buttons at the top of the screen, by using the slider at the bottom of the screen, or by simply dragging the indicator-needle to the appropriate location.
+
+        Tap the gear icon in the top right of the screen to bring up the settings screen, where you can set your \"level.\" Your level determines the frequency of reminders during your countdown.\n
+\n
+        Once your timer is set for the appropriate overall time, and your level is set for the appropriate reminder frequency, press the PLAY button to start the countdown. Set the phone aside and begin. Try to stay focused on your task.\n
+\n
+        When the reminder goes off, it\'s time to notice if you were focused. Either way, get right back to it, refocus, and get it done. During the countdown, you can pause the timer by pressing \"Stop.\" To continue, press \"Start.\"\n
+\n
+        This will continue your timer from where you left off.  Opening the settings screen will reset your timer.\n
+\n
+        If you use the timer regularly, you may find that you are anticipating the upcoming reminder just before it goes off. That\'s great! It means you have the opportunity to refocus, and you\'ll be better able to stay on task when you can\'t use the app.</string>
+    <string name="instructions">Instructions</string>
+    <string name="reminder_channel_id">com.dedicatedtechie.imonit.Reminder Channel mark1</string>
+    <string name="completion_channel_id">com.dedicatedtechie.imonit.Completion Channel mark1</string>
+    <string name="ongoing_channel_id">com.dedicatedtechie.imonit.Ongoing Channel mark2</string>
+    <string name="reminder_channel_description">Reminder Channel</string>
+    <string name="reminder_channel_name">\'Stay Focused\' notifications</string>
+    <string name="completion_channel_description">The timer has gone off</string>
+    <string name="completion_channel_name">\'Task Done\' notifications</string>
+    <string name="ongoing_channel_descriptioon">\'I\'m On It\' is running\'</string>
+    <string name="ongoing_channel_description">Running in Background</string>
+    <string name="reminder_notification_message">Don\'t forget what you\'re doing.  Get right back to it!</string>
+    <string name="completion_notification_message">Congratulations.  You\'re done!</string>
+    <string name="ongoing_notification_message">You can do it!</string>
+    <string name="reminder_notification_title">Reminder</string>
+    <string name="completion_notification_title">All Done</string>
+    <string name="ongoing_notification_title">I\'m On It</string>
+    <string name="reminder_notification_action_text">I\'m On It!</string>
+    <string name="completion_notification_action_text">I did It!</string>
+    <string name="ongoing_notification_action_text" />
+    <string name="level_setting_summary">%s \nClick here to change the reminder frequency</string>
+
+</resources>
