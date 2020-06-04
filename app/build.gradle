@@ -6,8 +6,8 @@ android {
         applicationId "com.dedicatedtechie.imonit"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 36
-        versionName "3.6"
+        versionCode 37
+        versionName "3.7_GNUPL3"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
@@ -26,12 +26,12 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.preference:preference:1.1.0'
+    implementation 'androidx.preference:preference:1.1.1'
     androidTestImplementation('androidx.test.espresso:espresso-core:3.2.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.core:core:1.2.0'
+    implementation 'androidx.core:core:1.3.0'
     implementation 'androidx.browser:browser:1.2.0'
     implementation 'androidx.media:media:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'

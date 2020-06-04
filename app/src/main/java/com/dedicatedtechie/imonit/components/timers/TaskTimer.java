@@ -11,7 +11,6 @@ import com.dedicatedtechie.imonit.components.controls.Controls;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import static com.dedicatedtechie.imonit.MainActivity.TAG;
-import static com.dedicatedtechie.imonit.settings.NotificationSettings.TYPE_COMPLETE;
 
 public class TaskTimer extends TimerFunctions {
 

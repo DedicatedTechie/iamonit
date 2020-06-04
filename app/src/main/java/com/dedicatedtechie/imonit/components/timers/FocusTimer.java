@@ -7,7 +7,6 @@ import com.dedicatedtechie.imonit.components.Components;
 import com.dedicatedtechie.imonit.settings.NotificationSettings;
 
 import static com.dedicatedtechie.imonit.MainActivity.TAG;
-import static com.dedicatedtechie.imonit.settings.NotificationSettings.TYPE_REMINDER;
 
 public class FocusTimer extends TimerFunctions {
     private final Components components;

@@ -129,7 +129,7 @@ public class SettingsObject {
 
             setLevel(intLevel);
 
-            boolean vibrateOnReminder = prefs.getBoolean(activity.getString(R.string.vibrateOnReminder), true);
+            boolean vibrateOnReminder = prefs.getBoolean(activity.getString(R.string.vibrate_on_reminder), true);
             setVibrateOnReminder(vibrateOnReminder);
 
             boolean soundOnReminder = prefs.getBoolean(activity.getString(R.string.play_sound_on_reminder), true);
@@ -163,7 +163,7 @@ public class SettingsObject {
     }
 
     private String getLevelIntFromLevelDescriptionString(String levelStatementString) {
-        String levelSubString = null;
+        String levelSubString;
         try {
             levelSubString = levelStatementString.substring(6, 8);
             return levelSubString.replaceAll("[^0-9.]", "");

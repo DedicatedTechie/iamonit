@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="progressBarWanted">progressBarWanted</string>
-    <string name="vibrateOnReminder">vibrateOnReminder</string>
-    <string name="vibrateOnFinish">vibrateOnFinish</string>
-    <string name="completeSoundWanted">completeSoundWanted</string>
-    <string name="reminderSoundWanted">reminderSoundWanted</string>
     <string name="currentTime">currentTime</string>
     <string name="isCounting">isCounting</string>
     <string name="timerCountsUp">timerCountsUp</string>
