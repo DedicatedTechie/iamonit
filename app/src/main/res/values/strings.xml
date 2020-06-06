@@ -69,7 +69,6 @@
     <string name="reminder_channel_name">\'Stay Focused\' notifications</string>
     <string name="completion_channel_description">The timer has gone off</string>
     <string name="completion_channel_name">\'Task Done\' notifications</string>
-    <string name="ongoing_channel_descriptioon">\'I\'m On It\' is running\'</string>
     <string name="ongoing_channel_description">Running in Background</string>
     <string name="reminder_notification_message">Don\'t forget what you\'re doing.  Get right back to it!</string>
     <string name="completion_notification_message">Congratulations.  You\'re done!</string>

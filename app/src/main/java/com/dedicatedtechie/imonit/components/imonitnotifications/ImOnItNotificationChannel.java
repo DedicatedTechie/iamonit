@@ -45,7 +45,7 @@ public class ImOnItNotificationChannel {
                 break;
             default: //ongoing
                 this.id = _context.getString(R.string.ongoing_channel_id);
-                this.description = _context.getString(R.string.ongoing_channel_descriptioon);
+                this.description = _context.getString(R.string.ongoing_channel_description);
                 this.name = _context.getString(R.string.ongoing_channel_description);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                     this.importance = NotificationManager.IMPORTANCE_LOW;
