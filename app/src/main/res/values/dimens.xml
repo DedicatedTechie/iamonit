@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="largeButtonSize">75dp</dimen>
+    <dimen name="fabMarginSize">16dp</dimen>
+    <dimen name="standardMarginSize">20dp</dimen>
+</resources>

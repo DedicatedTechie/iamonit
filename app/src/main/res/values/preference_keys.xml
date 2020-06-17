@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="currentTime">currentTime</string>
+    <string name="isCounting">isCounting</string>
+    <string name="timerCountsUp">timerCountsUp</string>
+    <string name="timerSetTo">timerSetTo</string>
+    <string name="level_setting">levelSetting</string>
+</resources>
